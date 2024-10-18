@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Indicação</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="container form-container">
+    <h2>Formulário de Indicação</h2>
+    <p id="affiliateMessage" class="text-center"></p>
+    <form id="leadForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nome <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="name" placeholder="Digite o nome completo" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+        <input type="email" class="form-control" id="email" placeholder="Digite o email" required>
+        <div class="form-text">Nunca compartilharemos seu email com ninguém.</div>
+      </div>
+      <div class="mb-3">
+        <label for="telefone" class="form-label">Telefone <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="telefone" placeholder="(00) 00000-0000" required>
+      </div>
+      <div class="mb-3">
+        <label for="rua" class="form-label">Rua/AV <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="rua" placeholder="Digite o nome da rua ou avenida" required>
+      </div>
+      <div class="mb-3">
+        <label for="numero" class="form-label">Número <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="numero" placeholder="Digite o número do endereço" required>
+      </div>
+      <div class="mb-3">
+        <label for="bairro" class="form-label">Bairro <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="bairro" placeholder="Digite o bairro" required>
+      </div>
+      <div class="mb-3">
+        <label for="cidade" class="form-label">Cidade <span class="text-danger">*</span></label>
+        <select class="form-control" id="cidade" required>
+          <option value="">Selecione a cidade</option>
+          <option value="25">Alvorada do Oeste</option>
+          <option value="1">Alta Floresta do Oeste</option>
+          <option value="26">Alto Alegre dos Parecis</option>
+          <option value="33">Castanheiras</option>
+          <option value="35">Cujubim</option>
+          <option value="0">Dist. de Rondominas</option>
+          <option value="11">Jaru</option>
+          <option value="12">Ji-Paraná</option>
+          <option value="13">Machadinho do Oeste</option>
+          <option value="0">Migrantinópolis</option>
+          <option value="14">Nova Brasilândia</option>
+          <option value="29">Novo Horizonte do Oeste</option>
+          <option value="15">Ouro Preto do Oeste</option>
+          <option value="18">Presidente Médici</option>
+          <option value="44">Primavera de Rondônia</option>
+          <option value="20">Rolim de Moura</option>
+          <option value="21">Santa Luzia do Oeste</option>
+          <option value="0">Santana do Guaporé</option>
+          <option value="45">São Felipe</option>
+          <option value="48">Teixerópolis</option>
+          <option value="49">Theobroma</option>
+          <option value="50">Urupá</option>
+          <option value="51">Vale do Anari</option>
+          <option value="52">Vale do Paraíso</option>
+        </select>
+      </div>
+      <!-- CAPTCHA -->
+      <div class="mb-3 captcha-container p-3 rounded">
+        <label for="captcha" class="form-label">Quanto é <span id="captcha-question"></span>? <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="captcha" placeholder="Digite o resultado" required>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/form.js"></script>
+
+</body>
+
+</html>
